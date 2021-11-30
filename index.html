@@ -1,0 +1,255 @@
+
+<!DOCTYPE html> <!-- Especifa que version de HTML se va usar -->
+<html lang="en">
+<head>
+	<meta charset="utf-8" /> <!-- Para que los textos esten en español -->
+	<link rel="stylesheet" href="estilo.css"> <!-- Conexion con el archivo de CSS-->
+	<title> Pagina Institucional</title> <!-- Titulo de la pestaña-->
+	
+</head>
+<body>
+    
+    <header>   <!--  Se usan para definir la cabecera la página del logo y barra de opciones-->
+    	
+    	<div class="ancho">   <!-- Crea un bloque-->
+    		<div class="logo">
+    			
+    			<p><a href="index.html">ITTUX</a></p>
+    			
+    		</div>
+
+    		<nav class="barra"> <!-- Para proporcionar enlaces de navegacion-->
+    			<ul>      <!--Lista desordenada -->
+    				<li><a href="#">Inicio</a></li>    <!-- Etiqueta para incluir enlaces (links)-->
+    				<li><a href="#">Nosotros</a></li>   
+    				<li><a href="#">Servicios</a></li>
+    				<li><a href="formulario.html">Contactanos</a></li>
+    			</ul>
+    		</nav>
+    	</div>
+    </header>
+
+    <div class="navegacion">      <!--Menu desplegable -->       
+    <nav> <!-- Para proporcionar enlaces de navegacion-->
+      		<ul class="menu"> <!--Lista desordenada -->
+	      		<li><a href="#">Admision</a> <!-- Etiqueta para incluir enlaces (links)-->
+	      		    <ul class="submenu"> <!-- Clase de submenu-->
+	      				<li><a href="#">Procedimientos</a></li>
+	      			</ul> 
+	      		</li>
+
+	      		<li><a href="#">¿Dudas?</a>    <!--Casilla 1-->
+	      		    <ul class="submenu"> 
+	      				<li><a href="#">Preguntas frecuentes</a></li>
+	      			</ul> 
+	      		</li>
+
+	      		<li><a href="#">Modalidades</a> <!--Casilla 2 -->
+	      		    <ul class="submenu"> 
+	      				<li><a href="#">Escolarizado</a></li>
+	      				<li><a href="#">Sabatino</a></li>
+	      				<li><a href="#">Online</a></li>
+	      			</ul> 
+	      		</li>
+
+	      		<li><a href="#">Carreras</a> <!--Casilla 3 -->
+	      			<ul class="submenu"> 
+	      				<li><a href="#">Ing. Sistemas computacionales</a></li>
+	      				<li><a href="#">Ing. Civil</a></li>
+	      				<li><a href="#">Ing. Mecatronica</a></li>
+	      				<li><a href="#">Lic. Medicina</a></li>
+	      				<li><a href="#">Lic. Arquitectura</a></li>
+	      			</ul> 
+	      		</li>	
+	      		<li><a href="#">Oferta</a> <!--Casilla 4 -->
+	      			<ul class="submenu"> 
+	      				<li><a href="#">Maestrias</a>
+	      				<li><a href="#">Licenciaturas</a>
+	      				<li><a href="#">Doctorados</a>
+	      			</ul>	
+
+	      		</li>	
+
+      		</ul>
+      	</nav>
+      </div>
+      
+<main> <!-- contenido principal de una página-->
+
+<!-- SLIDER-->
+
+<div class="container">
+  
+  <ul class="slider">
+    <li id="slide1">
+      <img src="imagenes/entrada.jpg"/>
+    </li>
+    <li id="slide2">
+      <img src="imagenes/entrada2.jpg"/>
+    </li>
+    <li id="slide3">
+      <img src="imagenes/entrada3.jpg"/>
+    </li>
+    
+    <li id="slide4">
+      <img src="imagenes/piramide.jpg"/>
+    </li>
+
+  </ul>
+  
+  <ul class="menu2">
+    <li>
+      <a href="#slide1"></a>
+    </li>
+    <li>
+      <a href="#slide2"></a>
+    </li>
+     <li>
+      <a href="#slide3"></a>
+    </li>
+
+    <li>
+      <a href="#slide4"></a>
+    </li>
+  </ul>
+  
+</div>
+
+<div class="main">  <!--Contenedor de texto de la parte inferior -->
+<div class="content">
+<div class="right"> <!--Clase en donde se ubican la lista y calendario -->
+	<div class="sidebar">
+		<ul>              <!--Lista de contactos-->
+			<li>
+				<h2>CONTACTOS</h2>
+				<ul>
+					<li>
+					<a>Telefono: 287 8751880 Ext. 114</a>
+					</li>
+					<li>
+					<a>E-mail: cyd_tuxtepec@tecnm.mx</a>
+					</li>
+					
+				</ul>
+			</li>
+			<li>
+				<h2>CALENDARIO</h2>   <!--Calendario-->
+				<ul>
+				<li class="calendar">			
+				<div class="calendar1">
+					<table class="calendar2" summary="Calendar">
+						<caption>
+						Octubre 2021
+						</caption>
+						<thead>
+							<tr>
+								<th abbr="Lunes" scope="col" title="Lunes">L</th>
+								<th abbr="Martes" scope="col" title="Martes">M</th>
+								<th abbr="Miercoles" scope="col" title="Miercoles">M</th>
+								<th abbr="Jueves" scope="col" title="Jueves">J</th>
+								<th abbr="Viernes" scope="col" title="Viernes">V</th>
+								<th abbr="Sabado" scope="col" title="Sabado">S</th>
+								<th abbr="Domingo" scope="col" title="Domingo">D</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td abbr="Des" colspan="3" id="prev"><a href="#">&laquo;Sep</a></td>
+								<td class="pad">&nbsp;</td>
+								<td abbr="Feb" colspan="3" id="next" class="pad"><a href="#">Nov &raquo;</a></td>
+							</tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								<td colspan="2" class="pad">&nbsp;</td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+							</tr>
+							<tr>
+								<td>20</td>
+								<td>21</td>
+								<td id="now">22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td>31</td>
+								<td class="pad" colspan="2">&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+		  </ul>
+			</li>			
+		</ul>
+	</div>
+	<!-- Fin de la clase sidebar-->
+	</div>
+<div class="left">  <!--Clase "Left" en donde van los textos, video y audio -->
+			<h1>B I E N V E N I D O ! ! </h1>
+			<h2>INSTITUTO TECNOLOGICO DE TUXTEPEC</h2>
+
+			<video width="550" height="250" autoplay muted controls > <!--Video promocional de la institucion-->
+				<source src="video.mp4" type="video/mp4">
+			</video>
+			<p>Este es el sitio web oficial del Istituto Tecnologico de Tuxtepec<br />
+			    <br />
+			  En el Tecnologico de Tuxtepec tenemos claro clara la vision que tenemos sobre el futuro de los estudiantes,
+			  ser una institución de educación superior de excelencia con valores, basada en el liderazgo educativo de alta calidad, que contribuya al desarrollo sostenido, sustentable y equitativo de la nación. <br />
+  <br />
+			  Es claro que nuestra prioridad como Institucion es llevar a nuestros estudiantes a un futuro con mejores oportunidades.<br />
+			  Para ello la mision que tenemos es formar profesionistas de nivel superior, participativos, creativos y emprendedores, con principios y valores, a través de una educación de calidad basada en competencias, comprometidos en brindar servicios con un alto nivel de desempeño, para cumplir el desarrollo integral de la sociedad.<br />
+			  
+  <br />
+			  </p>
+
+			  <h3>Himno del Tecnológico Nacional de México (TecNM)</h3>
+			  <audio controls muted>                                    <!--Inserccion del audio-->
+			  	<source src="himno.mp3" type="audio/mpeg">
+			  </audio>
+			
+			<br />
+			<div><br />
+                <div>
+                  <h2>¿Que ofrecemos como principal casa de estudios?</h2>
+                  <p>En la maxima casa de estudios de la Cuenca del Papaloapan damos la siguiente informacion: <strong><a href="#" style="color: #0166B2">Oferta Academica</a></strong> Estaa ofertas academicas que proporciona el Tecnologico son con el proposito de que el estudiante salaga mejor preparado al mundo laboral y no solo graduarse con su titulo universitario si no tener un agregado mas para su mejoria de corriculum. Las <a href="#" style="color: #0166B2" title="Free Css Templates">Carreras</a> que tenemos son del ambito de la ingenieria y licenciatura.</p>
+                  <p>and money!</p>
+                </div>
+                <h2>&nbsp;</h2>
+	  </div>
+			<div></div>
+	</div>
+</div>
+</div>
+</main>
+     
+</body>
+</html>

@@ -1,0 +1,390 @@
+*{                                   /*Estilo de la pagina*/   
+	margin: 0;         /*Margen de la pagina*/  
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-box-sizing: border-box;
+}
+
+
+body{                        /*Color de fondo de la pagina*/  
+	background: #FFFAF0;
+}
+
+header{                    /*Estilo del primer header del logo y barra de opciones*/  
+	width: 100%;
+	background: #0166B2;
+	height: 70px;
+    
+}
+
+.ancho{                  
+	width: 80%;    /*Ancho*/  
+	height: 90px;  /*Altura*/   
+	
+	margin: auto;  /*Margen Automatico*/  
+}
+
+/*Estilo del logo*/  
+
+.logo{          
+	width: 30%;
+	height: 70px;
+	background: #0166B2;  /*Color de fondo*/  
+	float: left;            /*Ubica un elemento al lado izquierdo*/
+	padding-top: 10px;      /* establece el espacio de relleno requerido por todos los lados de un elemento.*/
+	box-sizing: border-box; /*Estable el tamaño por defecto de la caja*/ 
+}
+
+.logo p a{
+	color: #fff;
+	font-size: 40px;    /*Especifica la dimensión de la letra*/
+	text-decoration: none;   /*Decoracion del texto*/ 
+	font-weight: bold;       /*Especifica el peso o grueso de la letra*/ 
+	font-family: OpenSans;   /*Tipo de letra */
+
+}
+
+
+/*Estilo de la barra*/  
+
+.barra{
+	width: 70%;
+	height: 70px;
+	background:#0166B2; 
+	float: left; 
+	text-align: right; /*Alineacion del texto*/ 
+	padding-top: 24px;
+	box-sizing: border-box;
+}
+
+.barra ul li{
+	display: inline;  /*establece los tipos de visualización interna y externa de un elemento*/
+
+}
+
+.barra ul li a{
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: OpenSans;
+}
+
+.barra ul li a:hover{
+	color:#444;
+}
+
+@font-face{
+	font-family: OpenSans;
+	src:url(fuentes/OpenSans-Regular.ttf);
+}
+
+/*Estilo del menu de navegacion*/  
+
+.navegacion{    
+	width: 1980px;
+	display: space-between;
+	max-width: 100%;
+	margin: 0px auto;
+	margin-left: auto;
+	margin-right: auto;
+	background: #F3DA04;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+/*Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #7a2248;
+	width: 120%;
+
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+	z-index: 2;
+}
+
+.submenu li a{
+	display: block;
+
+	padding: 15px;
+	color: #fff;
+	font-family: 'Lucida Bright'
+	text-decoration: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a {
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Lucida Bright';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #7a2248;
+	transition: all .3s;
+}                             /*Hasta aca*/
+
+.menu li:hover > .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+/*SLIDER*/ 
+
+.container{    /*Contenedor del slider*/  
+  margin: auto;
+  background: #FFFAF0;
+  width: 962px;
+  padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 900px;
+  height: 300px;
+  z-index: 0;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+/*Menu de botones del Slider*/  
+.menu2{
+  text-align: center;
+  margin: 20px;
+}
+
+.menu2 li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu2 li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+   /*Contenedor de texto*/
+
+.main{                /*Main de la parte inferior*/  
+	margin: 0 auto;
+	width: 900px;
+   
+}
+
+.content   /*Caja del contenido de texto*/  
+{
+width: 870px;
+padding: 15px;
+}
+
+/*Estilo y pocision de la parte izquierda*/  
+
+.left
+{
+width: 580px;
+padding: 10px;
+}
+
+.left H1
+{
+color: #0166B2;
+margin: 0;
+padding: 0;
+font-size: 28px;
+}
+
+.left H2
+{
+color: #0166B2;
+margin: 0;
+padding: 0;
+font-size: 18px;
+padding-top: 10px;
+}
+
+.left H3{
+	color: #0166B2;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.left a
+{
+ color: #8eabaf;
+}
+
+.left a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+.left a:visited {
+	color: #8eabaf;
+}
+
+.small
+{
+margin: 15px;
+padding: 5px;
+border: 1px solid #99A067
+}
+
+/*Estilo y ubicacion de parte derecha de la caja de texto*/  
+
+.right
+{
+float: right;
+width: 254px;
+}
+
+/*Estilo del calendario*/  
+.calendar1 {
+	padding: 0 10px 20px 10px;
+}
+
+.calendar table {
+	width: 100%;
+	text-align: center;
+}
+
+.calendar thead {
+	background: #F1F1F1;
+}
+
+.calendar tbody td {
+	border: 1px solid #F1F1F1;
+}
+
+.calendar #prev {
+	text-align: left;
+}
+
+.calendar #next {
+	text-align: right;
+}
+
+.calendar tfoot a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.calendar #now {
+	background: #b1b1b1;
+	border: 1px solid #000000;
+	font-weight: bold;
+	color: #ffffff
+}
+
+/*Estilo del contendeor del calendario*/  
+.sidebar 
+{
+width: 254px;
+}
+
+.sidebar ul 
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: url(images/title_back.gif) no-repeat;
+}
+
+.sidebar li 
+{
+	margin-bottom: 15px;
+
+}
+
+.sidebar li ul {
+	padding: 10px;
+	border-top: none;
+}
+
+.sidebar li li {
+	margin: 0;
+	padding: 3px 0;
+}
+
+
+.sidebar li h2 {
+	height: 34px;
+	margin: 0;
+	padding: 10px 0 0 20px;
+	background: #0391A5 url(images/title.gif) no-repeat;
+	font-size: 18px;
+	color: #ffffff;
+	text-align:center;
+}
+
+.sidebar a:link {
+	text-decoration: none;
+}
+
+.sidebar a:hover {
+	text-decoration: underline;
+}
+.sidebar a:visited {
+		text-decoration: none;
+}
+
+.sidebar li a {
+	padding-left: 10px;
+	background: url() no-repeat 1px 5px;
+}
+
